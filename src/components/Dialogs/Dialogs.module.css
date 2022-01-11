@@ -1,0 +1,27 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+.incoming {
+    padding: 10px 50px;
+    color: royalblue;
+    background-color: beige;
+}
+
+.outgoing {
+    padding: 10px 50px;
+    color: royalblue;
+    text-align: right;
+    background-color: honeydew;
+}
+
+.dialogsItems {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    padding: 10px;
+}
