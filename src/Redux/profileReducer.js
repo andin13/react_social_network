@@ -2,7 +2,15 @@ const ADD_POST = 'ADD-POST';
 const CHANGE_TEXT_AREA = 'CHANGE-TEXT-AREA';
 const DELETE_POSTS = 'DELETE-POSTS';
 
-const profileReducer = (state, action) => {
+let initialState = {
+    posts: [
+        {id: 1, message: 'Hello world!', likeCount: 5},
+        {id: 2, message: 'second post', likeCount: 8}
+    ],
+    textArea: 'Default'
+};
+
+const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
             let newPost = {
