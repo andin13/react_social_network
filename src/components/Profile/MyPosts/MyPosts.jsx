@@ -25,10 +25,11 @@ const MyPosts = (props) => {
 
     return <div className={s.postBlock}>
         <h3>My posts</h3>
-        <div>
-            <div>
-                <textarea ref={newPostElement} onChange={changeTextArea} value={props.textArea}/>
-            </div>
+        <div className={s.postCreationBlock}>
+            <textarea className={s.postCreation}
+                    ref={newPostElement}
+                    onChange={changeTextArea} 
+                    value={props.textArea}/>
             <div>
                 <button onClick={addPost}>Add post</button>
                 <button onClick={deletePosts}>Delete all posts</button>

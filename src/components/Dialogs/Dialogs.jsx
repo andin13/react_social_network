@@ -5,12 +5,10 @@ import Message from "./Message/Message";
 
 const Dialogs = (props) => {
 
-    let state = props.state;
+    let dialogsElements = props.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)
+    let messagesElements = props.dialogsPage.messages.map(m => <Message incoming={m.incoming} message={m.message}/>)
 
-    let dialogsElements = state.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)
-    let messagesElements = state.dialogsPage.messages.map(m => <Message incoming={m.incoming} message={m.message}/>)
-
-    let textArea = props.textArea;
+    let textArea = props.dialogsPage.textArea;
 
     let ButtonPush = () => {
         if (textArea) {
@@ -27,14 +25,21 @@ const Dialogs = (props) => {
         <div className={s.dialogsItems}>
             {dialogsElements}
         </div>
-        <div className={s.messages}>
-            {messagesElements}
+        <div className={s.messageArea}>
+            <div className={s.messages}>
+                {messagesElements}
+            </div>
+            <div className={s.enterArea}>
+                <textarea value={textArea}
+                        onChange={changeMessageArea}
+                        placeholder='Enter your message'
+                />
+                <button onClick={ButtonPush}><img src="https://icon-library.com/images/chat-send-icon/chat-send-icon-1.jpg"/></button>
+            </div>
+
         </div>
-        <textarea value={textArea}
-                  onChange={changeMessageArea}
-                  placeholder='Enter your message'
-        />
-        <button onClick={ButtonPush}>push</button>
+        
+        
     </div>
 }
 

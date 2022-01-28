@@ -1,5 +1,18 @@
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+}
+
+.item a, .item a:visited {
+    text-decoration: none;
+    color: rgb(116, 59, 192);
+
+}
+
+
 .item img {
-    width: 70px;
-    height: 70px;
+    width: 50%;
     border-radius: 5em;
 }

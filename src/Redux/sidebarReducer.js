@@ -3,6 +3,7 @@ let initialState = {
     NavbarItems: [
         {name: 'Profile', url: '/profile'},
         {name: 'Messages', url: '/dialogs'},
+        {name: 'Users', url: '/users'},
         {name: 'News', url: '/news'},
         {name: 'Music', url: '/music'},
         {name: 'Settings', url: '/settings'},
