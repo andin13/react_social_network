@@ -8,14 +8,14 @@ let initialState = {
         {id: 3, name: 'Sveta'},
         {id: 4, name: 'Sasha'},
         {id: 5, name: 'Victor'},
-        {id: 6, name: 'Valera'},
+        {id: 6, name: 'Valeragggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg'},
 
     ],
     messages: [
         {id: 1, message: 'Hi', incoming: false},
         {id: 2, message: 'How are you?', incoming: true},
         {id: 3, message: 'Hi2', incoming: false},
-        {id: 4, message: 'Hi2', incoming: true},
+        {id: 4, message: 'Hissssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss2', incoming: true},
 
     ],
     textArea: 'Default'

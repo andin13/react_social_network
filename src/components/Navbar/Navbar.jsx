@@ -11,7 +11,7 @@ const Navbar = (props) => {
     return <nav className={classes.nav}>
         {NavbarItems}
         <div className={classes.FL}>
-            {/* {FriendsList} */}
+            { FriendsList }
         </div>
     </nav>
 }
